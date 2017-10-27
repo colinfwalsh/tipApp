@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWG-la-qBp">
-                                <rect key="frame" x="112.5" y="194.5" width="41.5" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWG-la-qBp">
+                                <rect key="frame" x="112.5" y="194.5" width="26" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -45,8 +45,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBQ-5F-J4F">
-                                <rect key="frame" x="109" y="95" width="157.5" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Bill Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBQ-5F-J4F">
+                                <rect key="frame" x="59" y="95" width="257" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -95,13 +95,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="billField" destination="3at-YN-7Uv" id="iao-7E-0kh"/>
+                        <outlet property="billLabel" destination="NWG-la-qBp" id="k6e-fi-u1P"/>
                         <outlet property="newTotal" destination="wBB-V5-CHb" id="XDL-PA-qNi"/>
                         <outlet property="prompt" destination="WBQ-5F-J4F" id="QOq-fu-f2S"/>
                         <outlet property="tipAmount" destination="cm5-FK-SWu" id="Yab-RY-d9t"/>
                         <outlet property="tipButton" destination="dWE-cs-iVe" id="fXf-If-NZJ"/>
                         <outlet property="tipField" destination="SYw-Dc-3xr" id="Szx-Yx-iWw"/>
-                        <outlet property="totalField" destination="3at-YN-7Uv" id="R0V-JD-9d2"/>
-                        <outlet property="totalLabel" destination="NWG-la-qBp" id="wqn-aB-CuM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
