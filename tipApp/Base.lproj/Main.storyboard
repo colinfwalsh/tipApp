@@ -51,8 +51,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3at-YN-7Uv">
-                                <rect key="frame" x="112.5" y="318.5" width="150" height="50"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3at-YN-7Uv">
+                                <rect key="frame" x="109" y="325" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="YIf-Oa-XNR"/>
                                     <constraint firstAttribute="width" constant="150" id="wxu-hv-vLB"/>
