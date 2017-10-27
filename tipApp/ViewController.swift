@@ -114,7 +114,33 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // When the Calculate Tip button is tapped, this is called
     @IBAction func calculateTip(_ sender: Any) {
-        /* Implement this method */
+        // Binds inputText and doubleTotal to optionals from the textField
+        // and casting from String -> Double
+        guard let inputText = totalField.text else {return}
+        guard let doubleTotal = Double(inputText) else {return}
+        guard let tipText = tipField.text else {return}
+        guard let tipPercent = Double(tipText) else {return}
+        
+        // Formats the double from doubleTotal * 0.2 to two decimal places
+        let tipValue = String(format: "%.2f", doubleTotal * tipPercent/100.0)
+        
+        // Binds doubleTip to the casted string tipValue
+        guard let doubleTip = Double(tipValue) else {return}
+        
+        // If the prompt is not hidden, this is executed
+        if !prompt.isHidden {
+            prompt.isHidden = true
+            switchLabelStates()
+        }
+        
+        // Sets the prompt to hidden so the above is never executed again
+        prompt.isHidden = true
+        
+        // Sets the label values
+        totalLabel.text = "Total: $" + String(format: "%.2f", doubleTotal)
+        tipAmount.text = "Tip Amount: $" + tipValue
+        newTotal.text =
+            "New Total: $" + String(format: "%.2f", doubleTotal + doubleTip)
     }
     
     func switchLabelStates() {
