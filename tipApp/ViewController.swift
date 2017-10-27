@@ -58,8 +58,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // Dismisses the keyboard when called
     @objc func dismissKeyboard() {
-        tipButton.isEnabled = true
-        tipButton.isOpaque = false
         totalField.resignFirstResponder()
     }
     
@@ -78,7 +76,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // When the Calculate Tip button is tapped, this is called
     @IBAction func calculateTip(_ sender: Any) {
-        
         // Binds inputText and doubleTotal to optionals from the textField
         // and casting from String -> Double
         guard let inputText = totalField.text else {return}
@@ -108,6 +105,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func switchLabelStates() {
+        // Helpful to switch states for the labels
+        
         totalLabel.isHidden = !totalLabel.isHidden
         tipAmount.isHidden = !tipAmount.isHidden
         newTotal.isHidden = !newTotal.isHidden
