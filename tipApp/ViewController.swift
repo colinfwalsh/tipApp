@@ -101,7 +101,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         if textField == billField {
             return string.rangeOfCharacter(from: invalidCharacters, options: [], range: string.startIndex ..< string.endIndex) == nil && newLength <= 7
-            
         } else {
             return newLength <= 2 // Bool
         }
