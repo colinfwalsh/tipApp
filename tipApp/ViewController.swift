@@ -95,13 +95,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let invalidCharacters = CharacterSet(charactersIn: "0123456789.").inverted
         
+        guard let text = textField.text else {return true}
+        
+        let newLength = text.utf16.count + string.utf16.count - range.length
+        
         if textField == billField {
-            return string.rangeOfCharacter(from: invalidCharacters, options: [], range: string.startIndex ..< string.endIndex) == nil
+            return string.rangeOfCharacter(from: invalidCharacters, options: [], range: string.startIndex ..< string.endIndex) == nil && newLength <= 7
             
         } else {
-            guard let text = textField.text else {return true}
-            
-            let newLength = text.utf16.count + string.utf16.count - range.length
             return newLength <= 2 // Bool
         }
     }
