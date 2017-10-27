@@ -58,6 +58,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // Dismisses the keyboard when called
     @objc func dismissKeyboard() {
+        tipButton.isEnabled = true
+        tipButton.isOpaque = false
         totalField.resignFirstResponder()
     }
     
