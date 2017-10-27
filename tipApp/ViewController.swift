@@ -102,7 +102,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Sets the label values
         totalLabel.text = "Total: " + String(doubleTotal)
         tipAmount.text = "Tip Amount: " + tipValue
-        newTotal.text = "New Total: " + String(doubleTotal + doubleTip)
+        newTotal.text =
+            "New Total: " + String(format: "%.2f", doubleTotal + doubleTip)
         
     }
     
