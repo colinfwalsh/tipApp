@@ -133,9 +133,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             switchLabelStates()
         }
         
-        // Sets the prompt to hidden so the above is never executed again
-        prompt.isHidden = true
-        
         // Sets the label values
         billLabel.text = "Bill: $" + String(format: "%.2f", doubleTotal)
         tipAmount.text = "Tip: $" + tipValue
