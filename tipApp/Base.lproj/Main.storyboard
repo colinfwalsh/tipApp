@@ -17,65 +17,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWG-la-qBp">
-                                <rect key="frame" x="146" y="170" width="82" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWG-la-qBp">
+                                <rect key="frame" x="112.5" y="194.5" width="41.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWE-cs-iVe">
-                                <rect key="frame" x="130.5" y="422.5" width="114" height="36"/>
+                                <rect key="frame" x="130.5" y="393.5" width="114" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Calculate Tip">
-                                    <color key="titleColor" red="0.87633627359999999" green="0.9126457254" blue="0.2271614958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.15136164781786915" green="0.61239238880000002" blue="0.38088290199128083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWq-0W-Lth"/>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lHk-AL-Mgw"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3at-YN-7Uv">
-                                <rect key="frame" x="125" y="328.5" width="125" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="125" id="f97-AA-j9V"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cm5-FK-SWu">
-                                <rect key="frame" x="146" y="201" width="24" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="112.5" y="228.5" width="27" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBB-V5-CHb">
-                                <rect key="frame" x="146" y="232" width="76" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="112.5" y="262.5" width="85.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBQ-5F-J4F">
+                                <rect key="frame" x="109" y="95" width="157.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3at-YN-7Uv">
+                                <rect key="frame" x="112.5" y="318.5" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YIf-Oa-XNR"/>
+                                    <constraint firstAttribute="width" constant="150" id="wxu-hv-vLB"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.13491742227979275" green="0.13491742227979275" blue="0.13491742227979275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cm5-FK-SWu" firstAttribute="leading" secondItem="NWG-la-qBp" secondAttribute="leading" id="3Fr-E8-KtK"/>
-                            <constraint firstItem="dWE-cs-iVe" firstAttribute="top" secondItem="3at-YN-7Uv" secondAttribute="bottom" constant="64" id="5tr-lL-qIF"/>
+                            <constraint firstItem="dWE-cs-iVe" firstAttribute="top" secondItem="3at-YN-7Uv" secondAttribute="bottom" constant="25" id="5tr-lL-qIF"/>
+                            <constraint firstItem="3at-YN-7Uv" firstAttribute="top" secondItem="NWG-la-qBp" secondAttribute="bottom" constant="100" id="6QR-w3-6xi"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cm5-FK-SWu" secondAttribute="trailing" constant="20" symbolic="YES" id="7aK-P4-fEg"/>
                             <constraint firstItem="dWE-cs-iVe" firstAttribute="centerX" secondItem="3at-YN-7Uv" secondAttribute="centerX" id="DMY-ZY-8Q2"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NWG-la-qBp" secondAttribute="trailing" constant="20" symbolic="YES" id="J15-oy-6RF"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wBB-V5-CHb" secondAttribute="trailing" constant="20" symbolic="YES" id="JFf-L6-S3J"/>
                             <constraint firstItem="cm5-FK-SWu" firstAttribute="top" secondItem="NWG-la-qBp" secondAttribute="bottom" constant="10" id="Ozz-B3-9Zl"/>
                             <constraint firstItem="wBB-V5-CHb" firstAttribute="leading" secondItem="cm5-FK-SWu" secondAttribute="leading" id="U4x-aY-Ce6"/>
                             <constraint firstItem="3at-YN-7Uv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bE2-4m-gDD"/>
-                            <constraint firstItem="NWG-la-qBp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="bZr-Bx-dZp"/>
-                            <constraint firstItem="NWG-la-qBp" firstAttribute="centerX" secondItem="3at-YN-7Uv" secondAttribute="centerX" id="hJT-yY-pqQ"/>
+                            <constraint firstItem="WBQ-5F-J4F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="cNw-Iq-q6i"/>
+                            <constraint firstItem="NWG-la-qBp" firstAttribute="leading" secondItem="3at-YN-7Uv" secondAttribute="leading" id="nI5-Q3-oS5"/>
+                            <constraint firstItem="WBQ-5F-J4F" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q6Y-R1-rLR"/>
                             <constraint firstItem="wBB-V5-CHb" firstAttribute="top" secondItem="cm5-FK-SWu" secondAttribute="bottom" constant="10" id="tiH-OG-hrP"/>
                             <constraint firstItem="3at-YN-7Uv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wxa-Cy-VLb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="calculateButton" destination="dWE-cs-iVe" id="vfw-1b-tv6"/>
                         <outlet property="newTotal" destination="wBB-V5-CHb" id="XDL-PA-qNi"/>
+                        <outlet property="prompt" destination="WBQ-5F-J4F" id="QOq-fu-f2S"/>
                         <outlet property="tipAmount" destination="cm5-FK-SWu" id="Yab-RY-d9t"/>
+                        <outlet property="tipButton" destination="dWE-cs-iVe" id="fXf-If-NZJ"/>
                         <outlet property="totalField" destination="3at-YN-7Uv" id="R0V-JD-9d2"/>
                         <outlet property="totalLabel" destination="NWG-la-qBp" id="wqn-aB-CuM"/>
                     </connections>
