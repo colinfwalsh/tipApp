@@ -41,11 +41,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
         tipField.delegate = self
         tipField.keyboardType = .decimalPad
         
-        tipField.attributedPlaceholder = NSAttributedString(string: "Tip %",
+        tipField.attributedPlaceholder = NSAttributedString(string: "Tip",
                                                             attributes: [NSAttributedStringKey.foregroundColor: UIColor.white.withAlphaComponent(0.6)])
         
-        totalField.attributedPlaceholder = NSAttributedString(string: "Bill Amount",
+        totalField.attributedPlaceholder = NSAttributedString(string: "Bill",
                                                               attributes: [NSAttributedStringKey.foregroundColor: UIColor.white.withAlphaComponent(0.6)])
+        
+        let tipPercentLabel = UILabel.init(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        
+        tipPercentLabel.text = "%"
+        tipPercentLabel.textColor = .white
+        tipField.leftView = tipPercentLabel
+        tipField.leftViewMode = UITextFieldViewMode.always
+        
+        let dollarSignLabel = UILabel.init(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        
+        dollarSignLabel.text = "$"
+        dollarSignLabel.textColor = .white
+        totalField.leftView = dollarSignLabel
+        totalField.leftViewMode = UITextFieldViewMode.always
         
         // Automatically clears all values in the input field whenever a user taps
         // on it
