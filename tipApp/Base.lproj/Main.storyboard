@@ -24,8 +24,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWE-cs-iVe">
-                                <rect key="frame" x="130.5" y="393.5" width="114" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="119" y="458.5" width="136" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Calculate Tip">
                                     <color key="titleColor" red="0.15136164781786915" green="0.61239238880000002" blue="0.38088290199128083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -51,8 +51,18 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3at-YN-7Uv">
-                                <rect key="frame" x="109" y="325" width="150" height="50"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tip %" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYw-Dc-3xr">
+                                <rect key="frame" x="112.5" y="318.5" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="GI5-cn-hSQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="N7w-6u-Ti0"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bill Total" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3at-YN-7Uv">
+                                <rect key="frame" x="112.5" y="383.5" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="YIf-Oa-XNR"/>
                                     <constraint firstAttribute="width" constant="150" id="wxu-hv-vLB"/>
@@ -64,21 +74,23 @@
                         </subviews>
                         <color key="backgroundColor" red="0.13491742227979275" green="0.13491742227979275" blue="0.13491742227979275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="3at-YN-7Uv" firstAttribute="top" secondItem="SYw-Dc-3xr" secondAttribute="bottom" constant="15" id="0ej-tf-ZMd"/>
+                            <constraint firstItem="NWG-la-qBp" firstAttribute="leading" secondItem="SYw-Dc-3xr" secondAttribute="leading" id="39k-hn-XS9"/>
                             <constraint firstItem="cm5-FK-SWu" firstAttribute="leading" secondItem="NWG-la-qBp" secondAttribute="leading" id="3Fr-E8-KtK"/>
-                            <constraint firstItem="dWE-cs-iVe" firstAttribute="top" secondItem="3at-YN-7Uv" secondAttribute="bottom" constant="25" id="5tr-lL-qIF"/>
-                            <constraint firstItem="3at-YN-7Uv" firstAttribute="top" secondItem="NWG-la-qBp" secondAttribute="bottom" constant="100" id="6QR-w3-6xi"/>
+                            <constraint firstItem="SYw-Dc-3xr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="4JF-aE-vLY"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cm5-FK-SWu" secondAttribute="trailing" constant="20" symbolic="YES" id="7aK-P4-fEg"/>
-                            <constraint firstItem="dWE-cs-iVe" firstAttribute="centerX" secondItem="3at-YN-7Uv" secondAttribute="centerX" id="DMY-ZY-8Q2"/>
+                            <constraint firstItem="dWE-cs-iVe" firstAttribute="top" secondItem="3at-YN-7Uv" secondAttribute="bottom" constant="25" id="DGQ-I9-RbN"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NWG-la-qBp" secondAttribute="trailing" constant="20" symbolic="YES" id="J15-oy-6RF"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wBB-V5-CHb" secondAttribute="trailing" constant="20" symbolic="YES" id="JFf-L6-S3J"/>
                             <constraint firstItem="cm5-FK-SWu" firstAttribute="top" secondItem="NWG-la-qBp" secondAttribute="bottom" constant="10" id="Ozz-B3-9Zl"/>
                             <constraint firstItem="wBB-V5-CHb" firstAttribute="leading" secondItem="cm5-FK-SWu" secondAttribute="leading" id="U4x-aY-Ce6"/>
-                            <constraint firstItem="3at-YN-7Uv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bE2-4m-gDD"/>
+                            <constraint firstItem="3at-YN-7Uv" firstAttribute="centerX" secondItem="SYw-Dc-3xr" secondAttribute="centerX" id="ZdD-SI-pgW"/>
+                            <constraint firstItem="SYw-Dc-3xr" firstAttribute="top" secondItem="NWG-la-qBp" secondAttribute="bottom" constant="100" id="bf3-uV-g7k"/>
                             <constraint firstItem="WBQ-5F-J4F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="cNw-Iq-q6i"/>
-                            <constraint firstItem="NWG-la-qBp" firstAttribute="leading" secondItem="3at-YN-7Uv" secondAttribute="leading" id="nI5-Q3-oS5"/>
+                            <constraint firstItem="dWE-cs-iVe" firstAttribute="centerX" secondItem="3at-YN-7Uv" secondAttribute="centerX" id="cZl-MW-Z4g"/>
                             <constraint firstItem="WBQ-5F-J4F" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q6Y-R1-rLR"/>
+                            <constraint firstItem="SYw-Dc-3xr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rgZ-Pv-YM3"/>
                             <constraint firstItem="wBB-V5-CHb" firstAttribute="top" secondItem="cm5-FK-SWu" secondAttribute="bottom" constant="10" id="tiH-OG-hrP"/>
-                            <constraint firstItem="3at-YN-7Uv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wxa-Cy-VLb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -87,6 +99,7 @@
                         <outlet property="prompt" destination="WBQ-5F-J4F" id="QOq-fu-f2S"/>
                         <outlet property="tipAmount" destination="cm5-FK-SWu" id="Yab-RY-d9t"/>
                         <outlet property="tipButton" destination="dWE-cs-iVe" id="fXf-If-NZJ"/>
+                        <outlet property="tipField" destination="SYw-Dc-3xr" id="Szx-Yx-iWw"/>
                         <outlet property="totalField" destination="3at-YN-7Uv" id="R0V-JD-9d2"/>
                         <outlet property="totalLabel" destination="NWG-la-qBp" id="wqn-aB-CuM"/>
                     </connections>
